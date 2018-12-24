@@ -1,14 +1,10 @@
 import React from "react"
+import Checklist from "./Checklist";
 
 function MainContent() {
     return (
         <main>
-            <h3>You know me</h3>
-            <ul>
-                <li>That place</li>
-                <li>That job</li>
-                <li>That automobile</li>
-            </ul>
+            <Checklist />
         </main>
     )
 }

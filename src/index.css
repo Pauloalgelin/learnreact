@@ -7,6 +7,18 @@ ol, ul {
   padding-left: 30px;
 }
 
+.navbar {
+  height: 100px;
+  background-color: #333;
+  color: whitesmoke;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .board-row:after {
   clear: both;
   content: "";
