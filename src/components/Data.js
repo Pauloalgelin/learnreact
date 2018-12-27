@@ -1,8 +1,8 @@
 const goals =
     [
-        {id: 0, name: "de"},
-        {id: 1, name: "jo"},
-        {id: 2, name: "pla"}
+        {id: 0, name: "de", completed: false},
+        {id: 1, name: "jo", completed: false},
+        {id: 2, name: "pla", completed: true}
     ]
 
 export default goals

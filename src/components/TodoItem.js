@@ -3,8 +3,8 @@ import React from "react"
 function TodoItem(props){
     return (
         <div>
-            <input type="checkbox"></input>
-            {props.name}
+            <input type="checkbox" checked={props.obj.completed}></input>
+            {props.obj.name}
         </div>
     )
 }
