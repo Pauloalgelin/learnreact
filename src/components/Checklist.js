@@ -1,13 +1,13 @@
 import React from "react"
 import TodoItem from "./TodoItem"
+import goals from "./Data"
 
 function Checklist() {
-    const meu = {name: "este"}
+    const todoItemArray = goals.map(data => <TodoItem key={data.id} name={data.name} />)
+
     return (
         <div>
-            <TodoItem obj={meu}/>
-            <TodoItem obj={meu}/>
-            <TodoItem obj={meu}/>
+            {todoItemArray}
         </div>
     )
 }
