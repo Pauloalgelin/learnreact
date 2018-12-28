@@ -3,8 +3,14 @@ import TodoItem from "./TodoItem"
 import goals from "./Data"
 
 class Checklist extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            todos: goals
+        }
+    }
     render() {
-        const todoItemArray = goals.map(item => <TodoItem key={item.id} obj={item} />)
+        const todoItemArray = this.state.todos.map(item => <TodoItem key={item.id} obj={item} />)
 
         return (
             <div>
